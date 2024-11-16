@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нами</title>
+    <style>
+        /* Подключение шрифта */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        /* Основной стиль */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fff; /* Белый фон */
+            color: #333; /* Тёмный текст */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #2C3E50; /* Тёмный цвет заголовка */
+        }
+
+        /* Подзаголовок */
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #555; /* Серый цвет текста */
+        }
+
+        /* Кнопка */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #fff; /* Белый текст */
+            background: #28a745; /* Зелёная кнопка */
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+        }
+
+        .button:hover {
+            transform: scale(1.1); /* Увеличение кнопки */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Сильнее тень при наведении */
+            background: #218838; /* Тёмно-зелёный цвет при наведении */
+        }
+
+        /* Анимация текста */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Контейнер с контентом -->
+    <div class="container">
+        <h1>Напишите нам</h1>
+        <p>Мы всегда рады ответить на ваши вопросы!</p>
+        <a href="https://wa.me/+77472332891" class="button" target="_blank">Связаться через WhatsApp</a>
+    </div>
+</body>
+</html>
+
